@@ -48,7 +48,7 @@ body {
 }
 
 .heading_container h2 span {
-  color: #00c6a9;
+  color: #f0691e;
 }
 
 .heading_container.heading_center {
@@ -105,11 +105,11 @@ a:focus {
 }
 
 .header_section .header_top .contact_nav a i {
-  color: #00c6a9;
+  color: #f0691e;
 }
 
 .header_section .header_bottom {
-  background-color: #00c6a9;
+  background-color: #27465d;
 }
 
 .header_section .header_bottom .container-fluid {
@@ -123,7 +123,7 @@ a:focus {
 }
 
 .navbar-brand img {
-  width: 55px;
+  width: 100px;
 }
 
 .custom_nav-container {
@@ -237,7 +237,7 @@ a:focus {
   -webkit-transform: none;
           transform: none;
 }
-
+/* 
 .quote_btn-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -259,7 +259,7 @@ a:focus {
 
 .quote_btn-container a:hover {
   color: #252525;
-}
+} */
 
 /*end header section*/
 /* slider section */
@@ -304,7 +304,7 @@ a:focus {
   position: unset;
 }
 
-.slider_section .play_btn {
+/* .slider_section .play_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,7 +324,7 @@ a:focus {
 }
 
 .slider_section .play_btn button {
-  background-color: #00c6a9;
+  background-color: #27465d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,7 +351,7 @@ a:focus {
   position: absolute;
   top: 50%;
   left: 50%;
-  background-color: #00c6a9;
+  background-color: #27465d;
   opacity: 1;
   border-radius: 100%;
   -webkit-transform: translate(-50%, -50%);
@@ -362,7 +362,7 @@ a:focus {
   z-index: 2;
   -webkit-animation: before-animation 1500ms infinite;
           animation: before-animation 1500ms infinite;
-}
+} */
 
 @-webkit-keyframes before-animation {
   0% {
@@ -402,7 +402,7 @@ a:focus {
 }
 
 .slider_section .detail-box h1 span {
-  color: #00c6a9;
+  color: #f06420;
 }
 
 .slider_section .detail-box p {
@@ -448,7 +448,7 @@ a:focus {
   position: unset;
   width: 50px;
   height: 50px;
-  background-color: #00c6a9;
+  background-color: #f0651f;
   opacity: 1;
 }
 
@@ -461,7 +461,7 @@ a:focus {
 .slider_section .carousel_btn-box .carousel-control-next:hover {
   background-color: #252525;
 }
-
+/* 
 .book_section h4 {
   position: relative;
   padding-bottom: 5px;
@@ -469,7 +469,7 @@ a:focus {
 }
 
 .book_section h4 span {
-  color: #00c6a9;
+  color: #f0651f;
 }
 
 .book_section h4::before {
@@ -479,7 +479,7 @@ a:focus {
   bottom: 0;
   width: 75px;
   height: 2px;
-  background-color: #00c6a9;
+  background-color: #f0651f;
 }
 
 .book_section form {
@@ -495,7 +495,7 @@ a:focus {
 .book_section form .form-control {
   width: 100%;
   background-color: transparent;
-  border: 1px solid #00c6a9;
+  border: 1px solid #f0651f;
   height: 45px;
   outline: none;
   -webkit-box-shadow: none;
@@ -505,27 +505,27 @@ a:focus {
 }
 
 .book_section form .form-control::-webkit-input-placeholder {
-  color: #00c6a9;
+  color: #f0651f;
 }
 
 .book_section form .form-control:-ms-input-placeholder {
-  color: #00c6a9;
+  color: #f0651f;
 }
 
 .book_section form .form-control::-ms-input-placeholder {
-  color: #00c6a9;
+  color: #f0651f;
 }
 
 .book_section form .form-control::placeholder {
-  color: #00c6a9;
+  color: #f0651f;
 }
 
 .book_section form #inputDate {
-  color: #00c6a9;
+  color: #f0651f;
 }
 
 .book_section form #inputDate input {
-  color: #00c6a9;
+  color: #f0651f;
 }
 
 .book_section form button.btn {
@@ -572,7 +572,7 @@ a:focus {
 
 .book_section .nice-select.open:after {
   content: "\f106";
-}
+} */
 
 .about_section .row {
   -webkit-box-align: center;
@@ -588,7 +588,10 @@ a:focus {
   color: #999;
   margin-top: 15px;
 }
-
+.about_section .detail-box ul li {
+  color: #999;
+  margin-top: 15px;
+}
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
