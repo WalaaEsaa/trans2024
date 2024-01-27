@@ -1,6 +1,6 @@
 $white: #ffffff;
 $black: #000000;
-$primary1: #00c6a9;
+$primary1: #27465d;
 $primary2: #252525;
 $textCol: #999;
 
@@ -582,9 +582,9 @@ a:focus {
 // end about section
 
 
-// treatment section
+// lingustic section
 
-.treatment_section {
+.linguistic-section {
   position: relative;
 
   .side_img {
@@ -623,7 +623,7 @@ a:focus {
         font-weight: bold;
       }
 
-      p {}
+      // p {}
 
       a {
         text-transform: uppercase;
@@ -639,12 +639,12 @@ a:focus {
   }
 }
 
-// end treatment section
+// end lingustic section
 
 
-// team section
+// translate section
 
-.team_section {
+.translate_section {
   background-color: $primary1;
 
   .heading_container {
@@ -708,7 +708,7 @@ a:focus {
     }
   }
 
-  .team_carousel {
+  .translate_carousel {
     margin-top: 45px;
     padding: 0 45px;
 
@@ -747,13 +747,13 @@ a:focus {
   }
 }
 
-// end team section
+// end translate section
 
 
 
-// client section
+// linguistic section
 
-.client_section {
+.linguistic_section {
   .heading_container {
     margin-bottom: 35px;
 
@@ -768,11 +768,11 @@ a:focus {
     box-shadow: 0 0 5px 0 rgba($color: #000000, $alpha: .25);
     padding: 25px;
 
-    .client_info {
+    .linguistic_info {
       display: flex;
       justify-content: space-between;
 
-      .client_name {
+      .linguistic_name {
         h5 {
           font-weight: 600;
           color: $primary1;
@@ -818,7 +818,7 @@ a:focus {
 
 }
 
-// end client section
+// end linguistic section
 
 // contact section
 .contact_section {

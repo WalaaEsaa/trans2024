@@ -21,7 +21,7 @@ $(function () {
 });
 
 // owl carousel slider js
-$('.team_carousel').owlCarousel({
+$('.translate_carousel').owlCarousel({
     loop: true,
     margin: 15,
     dots: true,

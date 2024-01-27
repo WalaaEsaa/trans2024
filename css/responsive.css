@@ -1,5 +1,5 @@
 @media (max-width: 1300px) {
-  .treatment_section .side_img {
+  .linguistic-section .side_img {
     opacity: 0.2;
   }
 }
@@ -34,18 +34,18 @@
   }
 
 
-  .client_section .box {
+  .linguistic_section .box {
     margin: 15px;
   }
 
-  .client_section .carousel_btn-box {
+  .linguistic_section .carousel_btn-box {
     display: flex;
     justify-content: center;
     margin-top: 45px;
   }
 
-  .client_section .carousel-control-prev,
-  .client_section .carousel-control-next {
+  .linguistic_section .carousel-control-prev,
+  .linguistic_section .carousel-control-next {
     position: unset;
     margin: 0 2.5px;
     width: 45px;
@@ -66,15 +66,15 @@
     opacity: 0.4;
   }
 
-  .team_section .team_carousel {
+  .translate_section .translate_carousel {
     padding: 0;
   }
 
-  .team_section .team_carousel .owl-nav {
+  .translate_section .translate_carousel .owl-nav {
     margin-top: 45px;
   }
 
-  .team_section .team_carousel .owl-nav button {
+  .translate_section .translate_carousel .owl-nav button {
     position: unset;
     transform: none;
   }
@@ -136,7 +136,7 @@
     margin: 0;
   }
 
-  .treatment_section .side_img {
+  .linguistic-section .side_img {
     display: none;
   }
 
